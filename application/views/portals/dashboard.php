@@ -124,7 +124,10 @@
             echo "<tr>";
 
             echo "<th>Current Level: ". $results['current_level'] . "</th>";
+            echo "<th>Current Grade: ". $results['current_grade'] . "</th>";
             echo "</tr>";
+
+
 
 
 
