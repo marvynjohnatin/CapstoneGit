@@ -31,7 +31,7 @@
                </table>
 
 
-             <p><img src="<?php echo base_url() ?>assets/images/students/<?php echo $results['stud_pic'] ?>" alt="" width="170" class="img-polaroid"/></p>
+             <p><img src="<?php echo base_url() ?>assets/images/students/<?php echo $results['stud_pic'] ?>" alt="" width="160" class="img-polaroid"/></p>
 
             <div class="hero-container">                  
                     <ul class="nav nav-tabs nav-stacked">
@@ -98,6 +98,8 @@
                 echo "</th>";
 
                 echo "<th>Current Level: <font color = 'green'>". $results['current_level'] . " </font> ";
+                echo "</th>";
+                 echo "<th>Current Grade: <font color = 'green'>". $results['current_grade'] . " </font> ";
                 echo "</th>";
                 echo "</tr>";
 

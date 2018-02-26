@@ -153,6 +153,36 @@ class Portals extends CI_Controller
         $this->load->view('templates/footer');
     }
 
+     public function viewdetails(){
+        if(!isset($this->session->userdata['logged_in'])){
+            die('Please log in');
+        }
+        $data['results'] = $this->student_model->get_details();
+        if(empty($data['results']))
+        {
+            show_404();
+        }
+        $this->load->view('templates/header-2');
+        $this->load->view('templates/navbar-portal');
+        $this->load->view('portals/details',$data);
+        $this->load->view('templates/footer');
+    }
+
+    public function viewgradeslist(){
+        if(!isset($this->session->userdata['logged_in'])){
+            die('Please log in');
+        }
+        $data['results'] = $this->student_model->get_details();
+        if(empty($data['results']))
+        {
+            show_404();
+        }
+        $this->load->view('templates/header-2');
+        $this->load->view('templates/navbar-portal');
+        $this->load->view('portals/gradelist',$data);
+        $this->load->view('templates/footer');
+    }
+
     public function viewmaintenance(){
         if(!isset($this->session->userdata['logged_in'])){
             die('Please log in');

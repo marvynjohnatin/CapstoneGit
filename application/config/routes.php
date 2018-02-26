@@ -8,11 +8,13 @@ $route['test'] = 'portals/test';
 //Student Portal Routes
 $route['portals/dashboard'] = 'portals/view';
 $route['portals/grade'] = 'portals/viewgrades';
+$route['portals/gradelist'] = 'portals/viewgradeslist';
 $route['portals/enrollment'] = 'portals/viewenrollment';
 $route['portals/schedule'] = 'portals/viewschedule';
 $route['portals/account'] = 'portals/viewaccount';
 $route['portals/payment'] = 'portals/viewpayment';
 $route['portals/maintenance'] = 'portals/viewmaintenance';
+$route['portals/details'] = 'portals/viewdetails';
 $route['login'] = 'portals/login';
 $route['accountsetupview'] = 'portals/accountsetupview';
 $route['accountsetup'] = 'portals/accountsetup';

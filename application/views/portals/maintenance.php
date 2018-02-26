@@ -8,7 +8,7 @@
              <table cellpadding="0" cellspacing="0" border="0" class="table  table-bordered">              
                                 <thead>
 
-            <?php
+           <?php
 
                 echo "<tr>";
 
@@ -18,7 +18,7 @@
 
                 echo "<tr>";
 
-                echo "<th>". $results['student_ID'] . "";
+                echo "<th><font color = 'green' > ". $results['studentnumber'] . "</font>";
 
                 echo "</th>";
                 echo "</tr>";
@@ -94,7 +94,7 @@
 
                                     <tr>
                                         <th>
-                                            &nbsp;&nbsp;&nbsp;Phone Number: <input type = "text">
+                                            Contact Number: <input type = "text">
                                         </th>
 
                                         <th>

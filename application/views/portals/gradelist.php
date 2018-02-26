@@ -18,7 +18,7 @@
 
                 echo "<tr>";
 
-                echo "<th><font color = 'green'>  ". $results['student_ID'] . "</font>" ;
+                echo "<th><font color = 'green'>  ". $results['studentnumber'] . "</font>" ;
 
                 echo "</th>";
                 echo "</tr>";
@@ -31,7 +31,7 @@
                </table>
 
 
-             <p><img src="<?php echo base_url() ?>assets/images/students/<?php echo $results['stud_pic'] ?>" alt="" width="170" class="img-polaroid"/></p>
+             <p><img src="<?php echo base_url() ?>assets/images/students/<?php echo $results['stud_pic'] ?>" alt="" width="160" class="img-polaroid"/></p>
 
             <div class="hero-container">                  
                     <ul class="nav nav-tabs nav-stacked">

@@ -1,8 +1,4 @@
-
-
-            <?php //--------------------------------------------------------------------------------------?>
-
-    <div class="span2">
+<div class="span2">
                    
             <div class="life-side-bar">
 
@@ -20,7 +16,7 @@
 
                 echo "<tr>";
 
-                echo "<th>". $results['studentnumber'] . "";
+                echo "<th><font color = 'green' > ". $results['studentnumber'] . "</font>";
 
                 echo "</th>";
                 echo "</tr>";
@@ -108,7 +104,30 @@
 
             echo "<tr>";
             echo "<th>Phone Number: ". $results['contactno'] . "</th>";
+            echo "<th>Telephone Number: ". $results['telephone'] . "</th>";
             echo "</tr>";
+
+            echo "<tr>";
+            echo "<th colspan = 2>";
+            echo "<h3><b><font color = 'red'>Family Information</font></b></h3>";
+            echo "</th>";
+            echo "</tr>";
+
+            echo "<tr>";
+            echo "<th>Father Name:</th>";
+            echo "<th>Mother Name:</th>";
+            echo "</tr>";
+
+            echo "<tr>";
+            echo "<th>Father Contact Number:</th>";
+            echo "<th>Mother Contact Number:</th>";
+            echo "</tr>";
+
+            echo "<tr>";
+            echo "<th>Guardian Name:</th>";
+            echo "<th>Guardian Contact Number:</th>";
+            echo "</tr>";
+
 
             echo "<tr>";
             echo "<th colspan = 2>";

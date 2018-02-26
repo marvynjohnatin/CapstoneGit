@@ -1,6 +1,4 @@
-<?php //--------------------------------------------------------------------------------------?>
-
-    <div class="span2">
+<div class="span2">
                    
             <div class="life-side-bar">
 
@@ -8,6 +6,7 @@
              <table cellpadding="0" cellspacing="0" border="0" class="table  table-bordered">              
                                 <thead>
 
+           
             <?php
 
                 echo "<tr>";
@@ -36,12 +35,12 @@
             <div class="hero-container">                  
                     <ul class="nav nav-tabs nav-stacked">
 
-            <li class="">
+            <li class="active">
               <a href="enrollment" class="yellow_link"><i class="icon-list icon-large icon-large"></i>&nbsp;Enrollment</a>
             
             </li>
 
-            <li class="active">
+            <li class="">
             <a href="schedule" class="yellow_link"><i class="icon-list icon-large icon-large"></i>&nbsp;Subject Schedule</a>
             
             </li>
@@ -71,72 +70,82 @@
             <?php //--------------------------------------------------------------------------------------?>
 
              
-                            <div class="span10">
+
+                <div class="span10">
             
                           <table cellpadding="0" cellspacing="0" border="6" class="table  table-bordered">                      
                                 <thead>
-                                  <tr>
-                                        <th colspan = 3>
-                                           <h3><b><font color = "red">Subject Schedule</font></b></h3>
+
+                                   <tr>
+                                        <th colspan = 4>
+                                           <h3><b><font color = "red">Enrollment Details</font></b></h3>
                                         </th>
                                     </tr>
 
-
-                                    
-
-
-
-                                    <tr>
-
-
-                                      <?php
-
-                                    echo "<th>Current Section: ". $results['current_section'] . "</th>";
-                                    echo "<th>Current Level: ". $results['current_level'] . "</th>";
-
-
-
-                                      ?>
+                                   <tr>
+                                        <th colspan = 4>
+                                        School Year: <font color = "green">2016-2017</font>
+                                        </th>
 
 
                                     </tr>
 
+                                <tr>          
+                                    <th>Subject</th>
+                                    <th>Level</th>
+                                    <th>Grade</th>
+                                </tr>
+
+                                <tr>          
+                                    <th>Math 1</th>
+                                    <th>Highschool</th>
+                                    <th>Grade 8</th>
+                                </tr>
+
+                                <tr>          
+                                    <th>English 1</th>
+                                    <th>Highschool</th>
+                                    <th>Grade 8</th>
+                                </tr>
+
+
+                                <tr>
+                                    <th colspan = 2>
+                                    Total Bill: <font color = red>P12,000.00</font>
+                                    </th>
+
+                                        <th colspan = 2>
+                                        Payment Type: <font color = red>Installment</font>
+                                        </th>
+
+                                </tr>
+
+
+                            
+
+                              
+                                <tr>
+                                    <th colspan = 4>
+                                <font color = "green">You are able to enroll in this grade!</font>
+                                    </th>
+                                </tr>
+
+                                <tr>
+                                    <th colspan = 4>
+                                             <button type="button" name = "submit" style="vertical-align:middle" class="button2" ><span>Apply For Enrollment! </span></button>
+                                    </th>
+                                </tr>
+
+
                                 </thead>
                                 <tbody>
-                 
+                                 
 
                            
                                 </tbody>
                             </table>
-
-                                <table cellpadding="0" cellspacing="0" border="6" class="table  table-bordered"><thead>
-
-                                      <tr>
-                                        <th>Subject</th>
-                                        <th>Time</th>
-                                        <th>Teacher In Charge</th>                                 
-                                     
-                                  
-                                    </tr>
-                                
-                                </thead>
-                                <tbody>
-                 
-
-                           
-                                </tbody>
-                            </table>
-
-
-
-                                
-
-
-
-
                                 
                 </div>
-
 
 
              <?php //--------------------------------------------------------------------------------------?>

@@ -26,6 +26,11 @@
                         <li class="divider-vertical"></li>
                         <li class="signup"><span class="sg"></span></li>
                     </ul>
+
+                      <div class="pull-right">
+                        <div class="admin">Logged in as <?php echo $this->session->userdata['accounttype']?>:
+                            <?php echo $this->session->userdata['studentnumber'] ?></div>
+                     </div>
                     </div>
                 </div>
             </div>
@@ -38,20 +43,18 @@
     <div class="margin-top">
         <div class="row">
 
-            <?php //--------------------------------------------------------------------------------------?>
-
-            <div class="span12">
-                <div class="alert alert-danger">
-                    <Strong>Heads Up!</strong>&nbsp;Welcome to Saint James Academy Online | Logged in as <?php echo $this->session->userdata['accounttype']?>:<?php echo $this->session->userdata['studentnumber']. ','.$this->session->userdata['fname'] ?>
-                    <div class="pull-right">
-                        <i class="icon-calendar icon-large"></i>
-                        <?php
-                        $Today = date('y:m:d');
-                        $new = date('l, F d, Y', strtotime($Today));
-                        echo $new;
-                        ?>
+          <div class="span12">
+                    <div class="alert alert-danger">
+                        <img src="<?php echo base_url(); ?>assets/images/sja.png" alt="" width="60" class="img-polaroid"/>
+                        <strong>Heads Up!</strong>&nbsp;Welcome to Saint James Academy Online
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            <i class="icon-calendar icon-large"></i>
+                                <?php
+                                $Today = date('y:m:d');
+                                $new = date('l, F d, Y', strtotime($Today));
+                                echo $new;
+                                ?>
                     </div>
-                </div>
             </div>
 
 
