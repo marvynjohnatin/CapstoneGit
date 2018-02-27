@@ -40,9 +40,12 @@ $route['registrars/docreate'] = 'registrars/docreate';
 //========================================================================>
 
 //Admission Routes
+//Admission Routes
 $route['admission/addstudent'] = 'admissions/viewcreatestudent';
 $route['admission/create'] = 'admissions/createstudent';
-$route['admission/activatestudent'] = 'admissions/viewpendingstudent';
+$route['admission/activatestudent'] = 'admissions/activatestudent';
+$route['admission/activatestudent/activating'] = 'admissions/activating';
+$route['admission/activate'] = 'admissions/activate';
 
 $route['(:any)'] = 'webpages/view/$1';
 $route['default_controller'] = 'webpages/view';

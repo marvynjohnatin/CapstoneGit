@@ -1,6 +1,7 @@
 <?php
 
-class Admission_model extends CI_Model{
+class Admission_model extends CI_Model
+{
     public function createstudent()
     {
         $number = $this->input->post('number');
@@ -35,6 +36,7 @@ class Admission_model extends CI_Model{
                     'current_level' => $level,
                     'current_year' => $year,
                     'status_enrolled' => 'No',
+                    'password' => 'itsmorefunatsja',
                     'account_status' => 'Pending'
                 );
                 $query = $this->db->insert('student', $data);
@@ -50,10 +52,91 @@ class Admission_model extends CI_Model{
         return true;
     }
 
-    public function getpendingstudents()
+    public function getpendingstudents($limit = FALSE, $offset = false)
     {
-        $this->db->where('account_status','Pending');
+        if ($limit) {
+            $this->db->limit($limit, $offset);
+        }
+        $this->db->where('account_status', 'Pending');
         $query = $this->db->get('student');
         return $query->result_array();
+    }
+
+    public function numberpending()
+    {
+        $this->db->where('account_status', 'Pending');
+        $query = $this->db->get('student');
+        return $query->num_rows();
+    }
+
+    public function getsearchedstudents($search, $limit = FALSE, $offset = false)
+    {
+        if ($limit) {
+            $this->db->limit($limit, $offset);
+        }
+        $this->db->where('account_status', 'Pending');
+        $this->db->like('fname', $search);
+        $query = $this->db->get('student');
+        return $query->result_array();
+    }
+
+    public function numbersearched($search)
+    {
+        $this->db->where('account_status', 'Pending');
+        $this->db->like('fname', $search);
+        $query = $this->db->get('student');
+        return $query->num_rows();
+    }
+
+    public function numberofparents()
+    {
+        $query = $this->db->get('parent');
+        return $query->num_rows();
+    }
+
+    public function getparents($limit=FALSE, $offset = false)
+    {
+        if($limit){
+            $this->db->limit($limit,$offset);
+        }
+        $query = $this->db->get('parent');
+        return $query->result_array();
+    }
+
+    public function getsearchedparent($search, $limit = FALSE, $offset = false)
+    {
+        if ($limit) {
+            $this->db->limit($limit, $offset);
+        }
+        $this->db->like('fname', $search);
+        $query = $this->db->get('parent');
+        return $query->result_array();
+    }
+
+    public function numbersearchedparent($search)
+    {
+        $this->db->like('fname', $search);
+        $query = $this->db->get('parent');
+        return $query->num_rows();
+    }
+
+    public function getparentactivation($parentid){
+        $this->db->where('Id',$parentid);
+        $query = $this->db->get('parent');
+        return $query->result_array();
+    }
+
+    public function getstudentactivation($studentid){
+        $this->db->where('Id',$studentid);
+        $query = $this->db->get('student');
+        return $query->result_array();
+    }
+
+    public function activatestudentrecord($studentid){
+        $data = array(
+            'account_status' => 'First'
+        );
+        $this->db->where('Id', $studentid);
+        $this->db->update('student', $data);
     }
 }
