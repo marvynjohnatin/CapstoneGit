@@ -1,26 +1,4 @@
-<div class="container">
-        <div class="margin-top">
-            <div class="row">
-                    
-            <?php //--------------------------------------------------------------------------------------?>
-              
-            <div class="span12">
-                    <div class="alert alert-danger">
-                        <Strong>Heads Up!</strong>&nbsp;Welcome to Saint James Academy Online
-                            <div class="pull-right">
-                                <i class="icon-calendar icon-large"></i>
-                                <?php
-                                $Today = date('y:m:d');
-                                $new = date('l, F d, Y', strtotime($Today));
-                                echo $new;
-                                ?>
-                            </div>
-                    </div>
-            </div>
-
-            <?php //--------------------------------------------------------------------------------------?>
-
-    <div class="span2">
+<div class="span2">
                    
             <div class="life-side-bar">
 
@@ -38,7 +16,7 @@
 
                 echo "<tr>";
 
-                echo "<th>". $results['teacher_ID'] . "";
+                echo "<th><font color = 'green'>". $results['teacher_ID'] . "</font>";
 
                 echo "</th>";
                 echo "</tr>";
@@ -50,7 +28,7 @@
                                 </thead>
                </table>
 
-                <p><img src="<?php echo base_url() ?>assets/images/students/marvynpic.jpg" alt="" width="170" class="img-polaroid"/></p>
+                <p><img src="<?php echo base_url() ?>" alt="" width="160" class="img-polaroid"/></p>
 
 
            

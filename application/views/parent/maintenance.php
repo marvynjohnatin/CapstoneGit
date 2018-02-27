@@ -1,6 +1,4 @@
-<?php //--------------------------------------------------------------------------------------?>
-
-    <div class="span2">
+<div class="span2">
                    
             <div class="life-side-bar">
 
@@ -8,57 +6,40 @@
              <table cellpadding="0" cellspacing="0" border="0" class="table  table-bordered">              
                                 <thead>
 
-           <?php
+            <tr>
+                <th>
+                    Parent ID:
+                </th>
+            </tr>
 
-                echo "<tr>";
-
-                echo "<th>Student Number:";
-                echo "</th>";
-                echo "</tr>";
-
-                echo "<tr>";
-
-                echo "<th><font color = 'green' > ". $results['studentnumber'] . "</font>";
-
-                echo "</th>";
-                echo "</tr>";
-
-            ?>
+            <tr>
+                <th>
+                    <font color="green">20121</font>
+                </th>
+            </tr>
             
 
                                   
                                 </thead>
                </table>
 
+               <p><img src="<?php echo base_url() ?>" alt="" width="160" class="img-polaroid"/></p>
 
-             <p><img src="<?php echo base_url() ?>assets/images/students/<?php echo $results['stud_pic'] ?>" alt="" width="160" class="img-polaroid"/></p>
+
+           
 
             <div class="hero-container">                  
                     <ul class="nav nav-tabs nav-stacked">
                     
                         <li class="">
-                        <a href="dashboard" class="yellow_link"><i class="icon-list icon-large icon-large"></i>&nbsp;Profile</a>
-                        
+                        <a href="dashboard" class="yellow_link"><i class="icon-list icon-large icon-large"></i>&nbsp;Student List</a>
                         </li>
-                        
-                        <li class="">
-                            <a href="grade" class="yellow_link"><i class="icon-list icon-large icon-large"></i>&nbsp;Grades</a>
-                        
-                        </li>
-                        
                                             
                         <li class="active">
                         <a href="maintenance" class="yellow_link"><i class="icon-list icon-large icon-large"></i>&nbsp;Maintenance</a>
                         
                         </li>
-                        
-                    
-                    
-                        
-                        
-                        
-                        
-                            
+          
                     </ul>
             </div>
             
@@ -68,6 +49,9 @@
     </div>
 
             <?php //--------------------------------------------------------------------------------------?>
+
+
+
 
              
 

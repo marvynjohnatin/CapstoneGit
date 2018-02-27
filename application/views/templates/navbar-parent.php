@@ -8,23 +8,18 @@
                         <span class="icon-bar"></span>
                     </a>
                     <div class="nav-collapse collapse">
-                    <ul class="nav">
+                     <ul class="nav">
                 
                     
                 
                     <li class="divider-vertical"></li>
                     <li class="">
-                        <a  rel="tooltip"  data-placement="bottom" href="dashboard"><i class="icon-home icon-large"></i>&nbsp;Teacher Profile</a>
-                    </li>
-
-                    <li class="divider-vertical"></li>
-                    <li class="">
-                        <a  rel="tooltip"  data-placement="bottom" href="subjectlist"><i class="fa fa-newspaper-o" icon-large"></i>&nbsp;Grade Posting</a>
+                        <a  rel="tooltip"  data-placement="bottom" href="dashboard"><i class="icon-user icon-large"></i>&nbsp;Parent Dashboard</a>
                     </li>
                     
                     <li class="divider-vertical"></li>
                     <li class="">
-                        <a  rel="tooltip"  data-placement="bottom" href="<?php echo base_url(); ?>faculty/logout"><i class="icon-signout icon-large"></i>&nbsp;Logout</a>
+                        <a  rel="tooltip"  data-placement="bottom" href="<?php echo base_url(); ?>logout"><i class="icon-signout icon-large"></i>&nbsp;Logout</a>
                     </li>
                         
 
@@ -32,27 +27,22 @@
                         <li class="divider-vertical"></li>
                         <li class="signup"><span class="sg"></span></li>
                     </ul>
-
                       <div class="pull-right">
-                        <div class="admin">Logged in as <?php echo $this->session->userdata['accounttype']?>:
-                            <?php echo $this->session->userdata['facultynumber'] ?></div>
+                        <div class="admin">Logged in as:</div>
                      </div>
-                    
-
                     </div>
                 </div>
             </div>
         </div>
 </body>
 
+
 <div class="container">
 
     <div class="margin-top">
         <div class="row">
 
-            <?php //--------------------------------------------------------------------------------------?>
-
-             <div class="span12">
+          <div class="span12">
                     <div class="alert alert-danger">
                         <img src="<?php echo base_url(); ?>assets/images/sja.png" alt="" width="60" class="img-polaroid"/>
                         <strong>Heads Up!</strong>&nbsp;Welcome to Saint James Academy Online
@@ -65,3 +55,6 @@
                                 ?>
                     </div>
             </div>
+
+
+    
