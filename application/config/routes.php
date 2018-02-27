@@ -47,6 +47,12 @@ $route['parent/dashboard'] = 'parents/dashboard';
 $route['parent/maintenance'] = 'parents/maintenance';
 //========================================================================>
 
+//Accounting Routes
+$route['accounting/studentlist'] = 'accountings/studentlist';
+$route['accounting/account'] = 'accountings/account';
+$route['accounting/payment'] = 'accountings/payment';
+//========================================================================>
+
 //Admission Routes
 $route['admission/addstudent'] = 'admissions/viewcreatestudent';
 $route['admission/create'] = 'admissions/createstudent';

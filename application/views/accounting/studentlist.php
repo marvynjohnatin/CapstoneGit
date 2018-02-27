@@ -1,31 +1,4 @@
-<div class="container">
-        <div class="margin-top">
-            <div class="row">
-                    
-            <?php //--------------------------------------------------------------------------------------?>
-              
-            <div class="span12">
-                    <div class="alert alert-danger">
-                        <Strong>Heads Up!</strong>&nbsp;Welcome to Saint James Academy Online
-                            <div class="pull-right">
-                                <i class="icon-calendar icon-large"></i>
-                                <?php
-                                $Today = date('y:m:d');
-                                $new = date('l, F d, Y', strtotime($Today));
-                                echo $new;
-                                ?>
-                            </div>
-                    </div>
-            </div>
-
-            <?php //--------------------------------------------------------------------------------------?>
-
-   
-
-            <?php //--------------------------------------------------------------------------------------?>
-
-             
-                            <div class="span12">
+<div class="span12">
             
                           <table cellpadding="0" cellspacing="0" border="6" class="table  table-bordered">                      
                                 <thead>

@@ -12,24 +12,21 @@
                 
                     
                 
-                    <li class="divider-vertical"></li>
+                    
                     <li class="">
                         <a  rel="tooltip"  data-placement="bottom" href="dashboard"><i class="icon-home icon-large"></i>&nbsp;Teacher Profile</a>
                     </li>
 
-                    <li class="divider-vertical"></li>
+                    
                     <li class="">
                         <a  rel="tooltip"  data-placement="bottom" href="subjectlist"><i class="fa fa-newspaper-o" icon-large"></i>&nbsp;Grade Posting</a>
                     </li>
                     
-                    <li class="divider-vertical"></li>
+                    
                     <li class="">
                         <a  rel="tooltip"  data-placement="bottom" href="<?php echo base_url(); ?>faculty/logout"><i class="icon-signout icon-large"></i>&nbsp;Logout</a>
                     </li>
                         
-
-
-                        <li class="divider-vertical"></li>
                         <li class="signup"><span class="sg"></span></li>
                     </ul>
 

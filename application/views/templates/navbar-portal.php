@@ -9,21 +9,21 @@
                     </a>
                     <div class="nav-collapse collapse">
                     <ul class="nav">
-                    <li class="divider-vertical"></li>
+                    
                     <li class="">
                         <a  rel="tooltip"  data-placement="bottom" href="dashboard"><i class="icon-home icon-large"></i>&nbsp;Student Profile</a>
                     </li>
 
-                    <li class="divider-vertical"></li>
+                    
                     <li class="">
                         <a  rel="tooltip"  data-placement="bottom" href="enrollment"><i class="fa fa-newspaper-o" icon-large"></i>&nbsp;Online Enrollment</a>
                     </li>
                     
-                    <li class="divider-vertical"></li>
+                    
                     <li class="">
                         <a  rel="tooltip"  data-placement="bottom" href="<?php echo base_url(); ?>logout"><i class="icon-signout icon-large"></i>&nbsp;Logout</a>
                     </li>
-                        <li class="divider-vertical"></li>
+                        
                         <li class="signup"><span class="sg"></span></li>
                     </ul>
 

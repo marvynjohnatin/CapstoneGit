@@ -1,50 +1,54 @@
-<div class="container">
-        <div class="margin-top">
-            <div class="row">
-                    
-            <?php //--------------------------------------------------------------------------------------?>
-              
-            <div class="span12">
-                    <div class="alert alert-danger">
-                        <Strong>Heads Up!</strong>&nbsp;Welcome to Saint James Academy Online
-                            <div class="pull-right">
-                                <i class="icon-calendar icon-large"></i>
-                                <?php
-                                $Today = date('y:m:d');
-                                $new = date('l, F d, Y', strtotime($Today));
-                                echo $new;
-                                ?>
-                            </div>
-                    </div>
-            </div>
-
-            <?php //--------------------------------------------------------------------------------------?>
-
-    <div class="span2">
+<div class="span2">
                    
             <div class="life-side-bar">
+
+
+            <table cellpadding="0" cellspacing="0" border="0" class="table  table-bordered">              
+                                <thead>
+
+            <tr>
+                <th>
+                    Student Number:
+                </th>
+            </tr>
+
+            <tr>
+                <th>
+                    <font color="green">2014141811</font>
+                </th>
+            </tr>
+            
+
+                                  
+                                </thead>
+               </table>
 
 
              <table cellpadding="0" cellspacing="0" border="0" class="table  table-bordered">              
                                 <thead>
 
              <tr>
-             <th>Student Number: 2014141811</th>
+             <th>First Name:</th>
              </tr>
-
-
              <tr>
-             <th>First Name: Iris Joshua </th>
+             <th> <font color = "green"> Iris Joshua </font> </th>
              </tr>
 
              <tr>
-             <th>Middle Name: Loren </th>
+             <th>Middle Name:</th>
              </tr>
-
+             <tr>
+             <th> <font color = "green"> Loren </font> </th>
+             </tr>
 
              <tr>
-             <th>Last Name: Tanyag</th>
+             <th>Last Name:</th>
              </tr>
+             <tr>
+             <th> <font color = "green"> Tanyag </font> </th>
+             </tr>
+
+
 
             
 
@@ -52,7 +56,7 @@
                   
 
 
-             <p><img src="<?php echo base_url() ?>assets/images/students/irispic.jpg" alt="" width="170" class="img-polaroid"/></p>
+             <p><img src="<?php echo base_url() ?>assets/images/students/irispic.jpg" alt="" width="160" class="img-polaroid"/></p>
 
                            </thead>
                </table>
@@ -79,9 +83,9 @@
 
                                   <tr>
 
-                                    <th>Current Section: St. Lorenzo</th>
-                                    <th>Current Grade: Grade 7</th>
-                                    <th>Current Level: Highschool</th>
+                                    <th>Current Section: <font color = "green"> St. Lorenzo </font></th>
+                                    <th>Current Grade: <font color = "green"> Grade 7 </font></th>
+                                    <th>Current Level: <font color = "green"> Highschool </font></th>
 
 
                                    </tr>
@@ -97,13 +101,20 @@
                              <table cellpadding="0" cellspacing="0" border="6" class="table  table-bordered">                      
                               <thead>
                                     <tr>
-                                        <th colspan>Detail Number: 1</th>
-                                        <th colspan>Payment Name: Monthly</th>
+                                        <th colspan>Detail Number: <font color = "red">1</font></th>
+                                        <th colspan>Payment Name: <font color = "red">Monthly</font></th>
                                     </tr>
 
                                      <tr>
-                                        <th colspan>Due Date: 04/15/2018</th>
-                                        <th colspan>Status: Not Paid Yet</th>
+                                        <th colspan>Due Date: <font color = "red">04/15/2018</font></th>
+                                        <th colspan>Status: <font color = "red">Not Paid Yet</font></th>
+                                    </tr>
+
+                                     <tr>
+                                        <th colspan>Pay Type: <font color = "red">Installment Payment</font></th>
+                                        <th colspan>Type of Payment:   
+                                        &emsp;<input type="radio" name="gender" value="male" checked> Cash
+                                        &emsp;<input type="radio" name="gender" value="male"> Cheque</th>
                                     </tr>
 
                                     <tr>
