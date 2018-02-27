@@ -33,10 +33,24 @@ $route['faculty/logout'] = 'faculties/logoutfaculty';
 $route['faculty/dashboard'] = 'faculties/profile';
 $route['faculty/subjects'] = 'faculties/subjects';
 $route['faculty/maintenance'] = 'faculties/maintenance';
+$route['faculty/subjectlist'] = 'faculties/subjectlist';
+$route['faculty/sectionlist'] = 'faculties/sectionlist';
+$route['faculty/studentlist'] = 'faculties/studentlist';
 
 //Registrar Routes
 $route['registrars/create'] = 'registrars/createstudentview';
 $route['registrars/docreate'] = 'registrars/docreate';
+//========================================================================>
+
+//Parent Routes
+$route['parent/dashboard'] = 'parents/dashboard';
+$route['parent/maintenance'] = 'parents/maintenance';
+//========================================================================>
+
+//Accounting Routes
+$route['accounting/studentlist'] = 'accountings/studentlist';
+$route['accounting/account'] = 'accountings/account';
+$route['accounting/payment'] = 'accountings/payment';
 //========================================================================>
 
 //Admission Routes

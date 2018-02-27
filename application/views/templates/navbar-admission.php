@@ -11,15 +11,15 @@
 
 
 
-                    <li class="divider-vertical"></li>
+                    
                     <li class="">
                         <a  rel="tooltip"  data-placement="bottom" href="<?php echo base_url(); ?>admission/addstudent"><i class="icon-home icon-large"></i>&nbsp;Add Student</a>
                     </li>
-                    <li class="divider-vertical"></li>
+                    
                     <li class="">
                         <a  rel="tooltip"  data-placement="bottom" href="<?php echo base_url(); ?>admission/activatestudent"><i class="icon-signout icon-large"></i>&nbsp;Activate Student</a>
                     </li>
-                    <li class="divider-vertical"></li>
+                    
                     <li class="">
                         <a  rel="tooltip"  data-placement="bottom" href="<?php echo base_url(); ?>admission/logout"><i class="icon-signout icon-large"></i>&nbsp;Logout</a>
                     </li>
@@ -27,7 +27,7 @@
 
 
 
-                    <li class="divider-vertical"></li>
+                   
                     <li class="signup"><span class="sg"></span></li>
                 </ul>
 

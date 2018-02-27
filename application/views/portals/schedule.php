@@ -91,8 +91,8 @@
 
                                       <?php
 
-                                    echo "<th>Current Section: ". $results['current_section'] . "</th>";
-                                    echo "<th>Current Level: ". $results['current_level'] . "</th>";
+                                    echo "<th>Current Section:<font color = 'green'> ". $results['current_section'] . "</font></th>";
+                                    echo "<th>Current Level:<font color = 'green'> ". $results['current_level'] . "</font></th>";
 
 
 

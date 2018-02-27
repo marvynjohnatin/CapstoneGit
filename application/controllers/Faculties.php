@@ -75,6 +75,57 @@ class Faculties extends CI_Controller {
         $this->load->view('templates/footer');
     }
 
+    public function subjectlist(){
+        //checking of login status
+        if(!isset($this->session->userdata['logged_in'])){
+            die('Please log in');
+        }
+        //getting details of student
+        $data['results'] = $this->faculty_model->get_details();
+        if(empty($data['results']))
+        {
+            show_404();
+        }
+        $this->load->view('templates/header-2');
+        $this->load->view('templates/navbar-faculty');
+        $this->load->view('faculty/subjectlist', $data);
+        $this->load->view('templates/footer');
+    }
+
+    public function sectionlist(){
+        //checking of login status
+        if(!isset($this->session->userdata['logged_in'])){
+            die('Please log in');
+        }
+        //getting details of student
+        $data['results'] = $this->faculty_model->get_details();
+        if(empty($data['results']))
+        {
+            show_404();
+        }
+        $this->load->view('templates/header-2');
+        $this->load->view('templates/navbar-faculty');
+        $this->load->view('faculty/sectionlist', $data);
+        $this->load->view('templates/footer');
+    }
+
+    public function studentlist(){
+        //checking of login status
+        if(!isset($this->session->userdata['logged_in'])){
+            die('Please log in');
+        }
+        //getting details of student
+        $data['results'] = $this->faculty_model->get_details();
+        if(empty($data['results']))
+        {
+            show_404();
+        }
+        $this->load->view('templates/header-2');
+        $this->load->view('templates/navbar-faculty');
+        $this->load->view('faculty/studentlist', $data);
+        $this->load->view('templates/footer');
+    }
+
      public function logoutfaculty(){
         //killing session
         $this->session->unset_userdata('logged_in');

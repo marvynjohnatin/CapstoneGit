@@ -8,28 +8,34 @@
                         <span class="icon-bar"></span>
                     </a>
                     <div class="nav-collapse collapse">
-                    <ul class="nav">
+                     <ul class="nav">
+                
+                    
+                
                     
                     <li class="">
-                        <a  rel="tooltip"  data-placement="bottom" href="dashboard"><i class="icon-home icon-large"></i>&nbsp;Student Profile</a>
+                        <a  rel="tooltip"  data-placement="bottom" href="studentlist"><i class="icon-home icon-large"></i>&nbsp;General Management</a>
                     </li>
 
-                    
+                  
                     <li class="">
-                        <a  rel="tooltip"  data-placement="bottom" href="enrollment"><i class="fa fa-newspaper-o" icon-large"></i>&nbsp;Online Enrollment</a>
+                        <a  rel="tooltip"  data-placement="bottom" href="history"><i class="fa fa-newspaper-o" icon-large"></i>&nbsp;Payment History</a>
+                    </li>
+
+                    <li class="">
+                        <a  rel="tooltip"  data-placement="bottom" href="reports"><i class="fa fa-newspaper-o" icon-large"></i>&nbsp;Reports</a>
                     </li>
                     
-                    
+                   
                     <li class="">
-                        <a  rel="tooltip"  data-placement="bottom" href="<?php echo base_url(); ?>logout"><i class="icon-signout icon-large"></i>&nbsp;Logout</a>
+                        <a  rel="tooltip"  data-placement="bottom" href="<?php echo base_url(); ?>faculty/logout"><i class="icon-signout icon-large"></i>&nbsp;Logout</a>
                     </li>
-                        
+
                         <li class="signup"><span class="sg"></span></li>
                     </ul>
 
                       <div class="pull-right">
-                        <div class="admin">Logged in as <?php echo $this->session->userdata['accounttype']?>:
-                            <?php echo $this->session->userdata['studentnumber'] ?></div>
+                        <div class="admin">Logged in as:</div>
                      </div>
                     </div>
                 </div>

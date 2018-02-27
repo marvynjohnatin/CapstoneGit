@@ -12,26 +12,28 @@
                 
                     
                 
-                    <li class="divider-vertical"></li>
+                    
                     <li class="">
                         <a  rel="tooltip"  data-placement="bottom" href="dashboard"><i class="icon-home icon-large"></i>&nbsp;Teacher Profile</a>
                     </li>
 
-                    <li class="divider-vertical"></li>
+                    
                     <li class="">
-                        <a  rel="tooltip"  data-placement="bottom" href="posting"><i class="fa fa-newspaper-o" icon-large"></i>&nbsp;Grade Posting</a>
+                        <a  rel="tooltip"  data-placement="bottom" href="subjectlist"><i class="fa fa-newspaper-o" icon-large"></i>&nbsp;Grade Posting</a>
                     </li>
                     
-                    <li class="divider-vertical"></li>
+                    
                     <li class="">
                         <a  rel="tooltip"  data-placement="bottom" href="<?php echo base_url(); ?>faculty/logout"><i class="icon-signout icon-large"></i>&nbsp;Logout</a>
                     </li>
                         
-
-
-                        <li class="divider-vertical"></li>
                         <li class="signup"><span class="sg"></span></li>
                     </ul>
+
+                      <div class="pull-right">
+                        <div class="admin">Logged in as <?php echo $this->session->userdata['accounttype']?>:
+                            <?php echo $this->session->userdata['facultynumber'] ?></div>
+                     </div>
                     
 
                     </div>
@@ -47,16 +49,16 @@
 
             <?php //--------------------------------------------------------------------------------------?>
 
-            <div class="span12">
-                <div class="alert alert-danger">
-                    <Strong>Heads Up!</strong>&nbsp;Welcome to Saint James Academy Online
-                    <div class="pull-right">
-                        <i class="icon-calendar icon-large"></i>
-                        <?php
-                        $Today = date('y:m:d');
-                        $new = date('l, F d, Y', strtotime($Today));
-                        echo $new;
-                        ?>
+             <div class="span12">
+                    <div class="alert alert-danger">
+                        <img src="<?php echo base_url(); ?>assets/images/sja.png" alt="" width="60" class="img-polaroid"/>
+                        <strong>Heads Up!</strong>&nbsp;Welcome to Saint James Academy Online
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            <i class="icon-calendar icon-large"></i>
+                                <?php
+                                $Today = date('y:m:d');
+                                $new = date('l, F d, Y', strtotime($Today));
+                                echo $new;
+                                ?>
                     </div>
-                </div>
             </div>

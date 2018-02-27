@@ -116,7 +116,7 @@
                                 <tr>
 
                                      <th colspan="2">
-                                    &emsp;<b>Payment Type:</b>
+                                    <b>Payment Type:</b>
                             
                                     &emsp;<input type="radio" name="gender" value="male" checked> Installment
 

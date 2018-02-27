@@ -18,7 +18,7 @@
 
                 echo "<tr>";
 
-                echo "<th>". $results['studentnumber'] . "";
+                echo "<th><font color = 'green'>". $results['studentnumber'] . "</font>";
 
                 echo "</th>";
                 echo "</tr>";
@@ -86,8 +86,8 @@
 
                                       <?php
 
-                                    echo "<th>Current Section: ". $results['current_section'] . "</th>";
-                                    echo "<th>Current Level: ". $results['current_level'] . "</th>";
+                                    echo "<th>Current Section:<font color = 'green'> ". $results['current_section'] . "</font></th>";
+                                    echo "<th>Current Level:<font color = 'green'> ". $results['current_level'] . "</font></th>";
 
 
 
@@ -212,6 +212,79 @@
 
 
                                     
+
+                                </thead>
+                                <tbody>
+                 
+
+                           
+                                </tbody>
+                            </table>
+
+                            <table cellpadding="0" cellspacing="0" border="6" class="table  table-bordered">                      
+                              <thead>
+                                  <tr>
+                                        <th colspan = 7>
+                                           <h3><b><font color = "red">Total Fee Breakdown</font></b></h3>
+                                        </th>
+                                  </tr>
+
+                                  <tr>
+                                    <th>Tuition Fee:</th>
+                                    <th>P 3,000.00</th>
+                                   </tr>
+
+                                   <tr>
+                                    <th>Miscellaneous Fee:</th>
+                                    <th>P 2,000.00</th>
+                                   </tr>
+
+                                   <tr>
+                                    <th>Entrance Fee:</th>
+                                    <th>P 1,000.00</th>
+                                   </tr>
+
+                                   <tr>
+                                    <th>Energy Fee:</th>
+                                    <th>P 1,500.00</th>
+                                   </tr>
+
+                                   <tr>
+                                    <th>Book Fee:</th>
+                                    <th>P 1,000.00</th>
+                                   </tr>
+
+                                    <tr>
+                                        <th colspan = "2">Total Bill: <input type = "text" value = "7,000.00"></th>
+
+                                      
+
+                                                                            
+                                     
+                                  
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+                 
+
+                           
+                                </tbody>
+                            </table>
+
+                            <table cellpadding="0" cellspacing="0" border="6" class="table  table-bordered">                      
+                              <thead>
+                                  <tr>
+                                        <th colspan = 7>
+                                           <h3><b><font color = "red">Student Fee Discounts</font></b></h3>
+                                        </th>
+                                  </tr>
+
+                                  <tr>
+                                    <th>ESC:</th>
+                                    <th>P 6,000.00</th>
+                                   </tr>
+
 
                                 </thead>
                                 <tbody>
